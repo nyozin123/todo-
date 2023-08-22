@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main>
+        <div class="w-full md:w-[80%] lg:w-[50%] bg-sky-600 h-screen mx-auto px-3 md:px-6 py-8">
+            <div>
+                <h2 class="text-[48px] text-sky-100">To Do List</h2>
+            </div>
+            <form id="frm-task">
+                <div class="w-full flex items-center gap-2 md:gap-5 mt-5">
+                    <input type="text" name="task" id="task" class="w-[85%] md:w-[90%] py-3 px-2 outline-none">
+                    <button class="w-[15%] md:w-[10%] bg-sky-500 text-center py-3">
+                        <i class="fa-solid fa-plus text-sky-200"></i>
+                    </button>
+                </div>
+            </form>
+            <ul id="task-list" class="mt-6 flex flex-col gap-y-3">
+                <!-- <li class="flex p-4 bg-sky-500 justify-between w-full">
+
+                    <div class="flex items-center gap-3">
+                        <input type="radio" class="border-none" name="rdo-completed" id="rdo-completed">
+                        <p>Buy a book</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-pencil me-3 text-sky-200"></i>
+                        <i class="fa-solid fa-trash-can me-3 text-sky-200"></i>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+    </main>
+
+    <script type="module" src="./src/js/main.js"></script>
+</body>
+
+</html>
