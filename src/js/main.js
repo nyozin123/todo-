@@ -40,6 +40,8 @@ $(document).ready(function () {
       inp_edit.focus();
       btnSaveChange.click(function () {
         $(this).parent().children().toggleClass("hidden");
+        task.text = inp_edit.val();
+        LS_set();
       });
 
       $(this).parent().children().toggleClass("hidden");
